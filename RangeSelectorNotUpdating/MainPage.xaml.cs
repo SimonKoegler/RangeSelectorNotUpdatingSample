@@ -26,5 +26,28 @@ namespace RangeSelectorNotUpdating
         {
             this.InitializeComponent();
         }
+
+        public double RangeMin
+        {
+            get { return (double)GetValue(RangeMinProperty); }
+            set { SetValue(RangeMinProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for RangeMin.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty RangeMinProperty =
+            DependencyProperty.Register("RangeMin", typeof(double), typeof(MainPage), new PropertyMetadata(0.0));
+        
+
+        public double RangeMax
+        {
+            get { return (double)GetValue(RangeMaxProperty); }
+            set { SetValue(RangeMaxProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for RangeMax.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty RangeMaxProperty =
+            DependencyProperty.Register("RangeMax", typeof(double), typeof(MainPage), new PropertyMetadata(100.0));
+
+
     }
 }
