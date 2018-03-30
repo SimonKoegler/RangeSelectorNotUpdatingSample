@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <StackPanel VerticalAlignment="Center">
-        <controls:RangeSelector x:Name="RangeSelectorControl1" Minimum="0" Maximum="100" RangeMin="{x:Bind RangeMin, Mode=TwoWay}" RangeMax="{x:Bind RangeMax, Mode=TwoWay}"></controls:RangeSelector>
-        <controls:RangeSelector x:Name="RangeSelectorControl2" Minimum="0" Maximum="100" RangeMin="{x:Bind RangeMin, Mode=TwoWay}" RangeMax="{x:Bind RangeMax, Mode=TwoWay}"></controls:RangeSelector>
+        <controls:RangeSelector Minimum="0" Maximum="100" RangeMin="{x:Bind RangeMin, Mode=TwoWay}" RangeMax="{x:Bind RangeMax, Mode=TwoWay}"></controls:RangeSelector>
+        <controls:RangeSelector Minimum="0" Maximum="100" RangeMin="{x:Bind RangeMin, Mode=TwoWay}" RangeMax="{x:Bind RangeMax, Mode=TwoWay}"></controls:RangeSelector>
     </StackPanel>
 </Page>
